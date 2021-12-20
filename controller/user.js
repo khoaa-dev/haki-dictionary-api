@@ -15,15 +15,15 @@ export const getAllUser = (req, res) => {
 
 export const createUser = (req, res) => {
     const data = {
-        username: req.body.username,
+        email: req.body.email,
         name: req.body.name,
         pass: req.body.pass,
         avatarUrl: req.body.avatarUrl
     };
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`insert into Users (username, name, pass, avatarUrl)
-                    values ('${data.username}', N'${data.name}', '${data.pass}', '${data.avatarUrl}')`);
+            .query(`insert into Users (email, name, pass, avatarUrl)
+                    values ('${data.usernaemailme}', N'${data.name}', '${data.pass}', '${data.avatarUrl}')`);
         
     }).then(result => {
         if(result.rowsAffected == 1) {
