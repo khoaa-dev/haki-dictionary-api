@@ -23,7 +23,7 @@ export const createUser = (req, res) => {
     sql.connect(config).then(pool => {
         return pool.request()
             .query(`insert into Users (email, name, pass, avatarUrl)
-                    values ('${data.usernaemailme}', N'${data.name}', '${data.pass}', '${data.avatarUrl}')`);
+                    values ('${data.email}', N'${data.name}', '${data.pass}', '${data.avatarUrl}')`);
         
     }).then(result => {
         if(result.rowsAffected == 1) {
