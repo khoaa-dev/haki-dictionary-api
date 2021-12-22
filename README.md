@@ -25,4 +25,6 @@ http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/addYourWordVieEng: Add word to your word Vie Eng  
 
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWordEngVie/:id: Count your word Eng Vie by user id  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWordVieEng/:id: Count your word Vie Eng by user id  
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordEngVie/:id: Count history word Eng Vie by user id  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordVieEng/:id: Count history word Vie Eng by user id  
