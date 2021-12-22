@@ -19,7 +19,7 @@ export const countWordInHistoryVieEng = (req, res) => {
     const {id} = req.params;
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`select count(idDicEV) as 'count' from HistoryWord_Vie_Eng where idUser = ${id}`);
+            .query(`select count(idDicVE) as 'count' from HistoryWord_Vie_Eng where idUser = ${id}`);
         
     }).then(result => {
         res.send(result.recordset);
@@ -47,7 +47,7 @@ export const countWordInYourWordVieEng = (req, res) => {
     const {id} = req.params;
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`select count(idDicEV) as 'count' from YourWords_Vie_Eng where idUser = ${id}`);
+            .query(`select count(idDicVE) as 'count' from YourWords_Vie_Eng where idUser = ${id}`);
         
     }).then(result => {
         res.send(result.recordset);
