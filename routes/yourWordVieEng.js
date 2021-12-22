@@ -4,7 +4,7 @@ import { addYourWord, getAllYourWord } from "../controller/yourWordVieEng.js";
 
 const router = express.Router();
 
-router.get('/', getAllYourWord);
+router.get('/:id', getAllYourWord);
 
 router.post('/addYourWordVieEng', addYourWord);
 

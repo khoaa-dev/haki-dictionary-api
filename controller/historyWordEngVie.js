@@ -2,9 +2,10 @@ import sql from 'mssql';
 import config from '../config.js';
 
 export const getAllHistory = (req, res) => {
+    const {id} = req.params;
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`select * from HistoryWord_Eng_Vie`);
+            .query(`select * from HistoryWord_Eng_Vie where idUser = ${id}`);
         
     }).then(result => {
         res.send(result.recordset);

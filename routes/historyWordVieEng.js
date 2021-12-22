@@ -4,7 +4,7 @@ import { addHistory, getAllHistory } from "../controller/historyWordVieEng.js";
 
 const router = express.Router();
 
-router.get('/', getAllHistory);
+router.get('/:id', getAllHistory);
 
 router.post('/addHistoryVieEng', addHistory);
 
