@@ -7,6 +7,7 @@ import historyEngVieRoutes from './routes/historyWordEngVie.js';
 import historyVieEngRoutes from './routes/historyWordVieEng.js';
 import yourWordEngVieRoutes from './routes/yourWordEngVie.js';
 import yourWordVieEngRoutes from './routes/yourWordVieEng.js';
+import statisticRoutes from './routes/statistics.js';
 
 
 
@@ -27,6 +28,8 @@ router.use('/historyVieEng', historyVieEngRoutes);
 
 router.use('/yourWordEngVie', yourWordEngVieRoutes);
 router.use('/yourWordVieEng', yourWordVieEngRoutes);
+
+router.use('/statistic', statisticRoutes);
 
 
 export default router;
