@@ -1,10 +1,10 @@
 import express from "express";
 
-import { addYourWord } from "../controller/yourWordVieEng.js";
+import { addYourWord, getAllYourWord } from "../controller/yourWordVieEng.js";
 
 const router = express.Router();
 
-// router.get('/', getAllAnnouncement);
+router.get('/', getAllYourWord);
 
 router.post('/addYourWordVieEng', addYourWord);
 

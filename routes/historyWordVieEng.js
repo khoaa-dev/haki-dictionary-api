@@ -1,10 +1,10 @@
 import express from "express";
 
-import { addHistory } from "../controller/historyWordVieEng.js";
+import { addHistory, getAllHistory } from "../controller/historyWordVieEng.js";
 
 const router = express.Router();
 
-// router.get('/', getAllAnnouncement);
+router.get('/', getAllHistory);
 
 router.post('/addHistoryVieEng', addHistory);
 

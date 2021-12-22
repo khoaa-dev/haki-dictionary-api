@@ -1,6 +1,19 @@
 import sql from 'mssql';
 import config from '../config.js';
 
+export const getAllHistory = (req, res) => {
+    sql.connect(config).then(pool => {
+        return pool.request()
+            .query(`select * from HistoryWord_Eng_Vie`);
+        
+    }).then(result => {
+        res.send(result.recordset);
+        
+    }).catch(err => {
+        console.log(err);
+    });
+}
+
 export const addHistory = (req, res) => {
     const data = {
         idDicEV: req.body.idDicEV,

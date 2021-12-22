@@ -1,6 +1,19 @@
 import sql from 'mssql';
 import config from '../config.js';
 
+export const getAllYourWord = (req, res) => {
+    sql.connect(config).then(pool => {
+        return pool.request()
+            .query(`select * from YourWords_Vie_Eng`);
+        
+    }).then(result => {
+        res.send(result.recordset);
+        
+    }).catch(err => {
+        console.log(err);
+    });
+}
+
 export const addYourWord = (req, res) => {
     const data = {
         idDicVE: req.body.idDicVE,
