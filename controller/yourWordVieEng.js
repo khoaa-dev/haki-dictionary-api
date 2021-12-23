@@ -5,7 +5,7 @@ export const getAllYourWord = (req, res) => {
     const {id} = req.params;
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`select idUser, idDicVE, name, content, image from YourWords_Vie_Eng where idUser = ${id}`);
+            .query(`select idUser, idDicVE, name, content, image from YourWords_Vie_Eng, dictionary_Vie_Eng where idUser = ${id} and idDicVE = id`);
         
     }).then(result => {
         res.send(result.recordset);
