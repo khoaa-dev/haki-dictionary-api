@@ -32,3 +32,6 @@ http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/count
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWordVieEng/:id: Count your word Vie Eng by user id  
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordEngVie/:id: Count history word Eng Vie by user id  
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordVieEng/:id: Count history word Vie Eng by user id  
+  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/deleteYourWordEngVie: Delete word in your word Eng Vie (Truyền idUser và idDicEV)  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/deleteYourWordVieEng: Delete word in your word Vie Eng (Truyền idUser và idDicVE)  
