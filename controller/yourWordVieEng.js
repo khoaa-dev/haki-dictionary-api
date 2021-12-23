@@ -40,3 +40,29 @@ export const addYourWord = (req, res) => {
         console.log(err);
     });
 }
+
+export const deleteYourWord = (req, res) => {
+    const data = {
+        idDicVE: req.body.idDicVE,
+        idUser: req.body.idUser
+    };
+    sql.connect(config).then(pool => {
+        return pool.request()
+            .query(`delete from  YourWords_Vie_Eng
+                    where idDicVE = ${data.idDicEV} and idUser = ${data.idUser}`);
+        
+    }).then(result => {
+        if(result.rowsAffected == 1) {
+            res.send({
+                "status": "Delete successfully"
+            });
+        } else {
+            res.send({
+                "status": "Delete failed"
+            });
+        }
+        
+    }).catch(err => {
+        console.log(err);
+    });
+}
