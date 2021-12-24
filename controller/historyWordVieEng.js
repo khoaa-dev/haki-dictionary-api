@@ -5,7 +5,10 @@ export const getAllHistory = (req, res) => {
     const {id} = req.params;
     sql.connect(config).then(pool => {
         return pool.request()
-            .query(`select idUser, idDicVE, name, content, image from HistoryWord_Vie_Eng, dictionary_Vie_Eng  where idUser = ${id} and idDicVE = id`);
+            .query(`select idUser, idDicVE, name, content, image, dateSearch 
+                    from HistoryWord_Vie_Eng, dictionary_Vie_Eng  
+                    where idUser = ${id} and idDicVE = id
+                    order by dateSearch desc`);
         
     }).then(result => {
         res.send(result.recordset);
