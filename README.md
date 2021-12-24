@@ -22,16 +22,14 @@ http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/historyEngVie/:
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/historyVieEng/addHistoryVieEng: Add word to history Vie Eng  
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/historyVieEng/:id: get all history word Vie Eng by user id   
 
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/addYourWordEngVie: Add word to your word Eng Vie  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/:id: get all your word Eng Vie by user id  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/addYourWordEngVie: Thêm từ của bạn Anh Việt (Truyền idUser và idDicEV)  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/:id: Lấy tất cả từ của bạn Anh Việt theo user id  
 
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/addYourWordVieEng: Add word to your word Vie Eng  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/:id: get all your word Vie Eng by user id
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/addYourWordVieEng: Thêm từ của bạn Việt Anh (Truyền idUser và idDicVE)  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/:id: Lấy tất cả từ của bạn Việt Anh theo user id
 
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWordEngVie/:id: Count your word Eng Vie by user id  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWordVieEng/:id: Count your word Vie Eng by user id  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordEngVie/:id: Count history word Eng Vie by user id  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWordVieEng/:id: Count history word Vie Eng by user id  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWord/:id: Đếm từ của bạn theo user id
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWord/:id: Đếm từ đã tra theo user id
   
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/deleteYourWordEngVie: Delete word in your word Eng Vie (Truyền idUser và idDicEV)  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/deleteYourWordVieEng: Delete word in your word Vie Eng (Truyền idUser và idDicVE)  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/deleteYourWordEngVie: Xóa từ của bạn Anh Việt (Truyền idUser và idDicEV)  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/deleteYourWordVieEng: Xóa từ của bạn Việt Anh (Truyền idUser và idDicVE)  
