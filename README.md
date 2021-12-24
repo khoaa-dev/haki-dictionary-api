@@ -26,10 +26,10 @@ http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/:id: Lấy tất cả từ của bạn Anh Việt theo user id  
 
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/addYourWordVieEng: Thêm từ của bạn Việt Anh (Truyền idUser và idDicVE)  
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/:id: Lấy tất cả từ của bạn Việt Anh theo user id
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/:id: Lấy tất cả từ của bạn Việt Anh theo user id  
 
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWord/:id: Đếm từ của bạn theo user id
-http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWord/:id: Đếm từ đã tra theo user id
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countYourWord/:id: Đếm từ của bạn theo user id  
+http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/statistic/countHistoryWord/:id: Đếm từ đã tra theo user id  
   
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordEngVie/deleteYourWordEngVie: Xóa từ của bạn Anh Việt (Truyền idUser và idDicEV)  
 http://ec2-3-144-36-186.us-east-2.compute.amazonaws.com:3030/api/yourWordVieEng/deleteYourWordVieEng: Xóa từ của bạn Việt Anh (Truyền idUser và idDicVE)  
